@@ -29,11 +29,14 @@
             <div class="row">
                 <div class="col-sm-4">
                     <h2>Bonjour</h2>
-                    <h5>Username</h5>
-                    <img>
-                    <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
-                    <h3>infos</h3>
-                    <p>Lorem ipsum dolor sit ame.</p>
+                    <h5>Bryan</h5>
+                    <img src="./upload/cover.jpg" alt="" style="height: 100px;width: 100px;"/>
+                    <hr>
+                    <p>BIOGRAPHIE</p>
+                    <hr>
+                    <h3>Infos</h3>
+                    <p>Homme</p>
+                    <hr>
                 </div>  
                 <div class="col-sm-8">
                     <h2>TITRE POST</h2>
