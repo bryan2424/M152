@@ -9,9 +9,9 @@
     <body>
         <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
             <ul class="navbar-nav">
-                <a class="navbar-brand" href="view/home.php">Logo</a>
+                <a class="navbar-brand" href="index.php">Logo</a>
                 <li class="nav-item">
-                    <a class="nav-link" href="view/home.php">Home</a>
+                    <a class="nav-link" href="index.php">Home</a>
                 </li>
                 <li class="nav-item active">
                     <a class="nav-link" href="#">Post</a>
@@ -26,19 +26,20 @@
         </nav>
         <div class="container">
             <h1>Ajouter un post</h1>
-            <form>
+            <form action="upload.php" method="POST" enctype="multipart/form-data">
                 <div class="input-group mb-3">
                     <div class="input-group-prepend">
-                        <span class="input-group-text">Default</span>
+                        <span class="input-group-text">Commentaire</span>
                     </div>
-                    <input type="text" class="form-control">
+                    <textarea class="form-control" rows="5" name="commentaire"></textarea>
                 </div>
                 <div class="custom-file">
-                    <input type="file" class="custom-file-input" id="customFile">
-                    <label class="custom-file-label" for="customFile">Choose file</label>
+                    <input type="hidden" name="MAX_FILE_SIZE" value="100000">
+                    <input type="file" class="custom-file-input" id="customFile" name="img">
+                    <label class="custom-file-label" for="customFile">Choisir une image</label>
                 </div>
                 <hr>
-                <button type="submit" class="btn btn-primary float-right">Submit</button>
+                <button type="submit" class="btn btn-primary float-right" name="send">Submit</button>
             </form>
         </div>
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
