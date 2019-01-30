@@ -35,7 +35,7 @@
                 </div>
                 <div class="custom-file">
                     <input type="hidden" name="MAX_FILE_SIZE" value="100000">
-                    <input type="file" class="custom-file-input" id="customFile" name="img">
+                    <input type="file" class="custom-file-input" id="customFile" name="img[]" multiple>
                     <label class="custom-file-label" for="customFile">Choisir une image</label>
                 </div>
                 <hr>
