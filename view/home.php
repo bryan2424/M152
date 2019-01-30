@@ -1,9 +1,11 @@
+<?php require_once './model/frontend.php'; ?>
 <!DOCTYPE html>
 <html>
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link href="./bootstrap-4.2.1-dist/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link href="./css/style.css" rel="stylesheet" type="text/css"/>
         <title>Blog</title>
     </head>
     <body>
@@ -39,15 +41,7 @@
                     <hr>
                 </div>  
                 <div class="col-sm-8">
-                    <h2>TITRE POST</h2>
-                    <h5>description, Dec 7, 2017</h5>
-                    <div class="fakeimg">Fake Image</div>
-                    <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-                    <br>
-                    <h2>TITRE POST</h2>
-                    <h5>description, Dec 7, 2017</h5>
-                    <div class="fakeimg">Fake Image</div>
-                    <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                    <?php echo showListPosts(getPosts())?>
                 </div>
             </div>
         </div>
